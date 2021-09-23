@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" 
+    integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <title>7 event listeners</title>
+</head>
+<body>
+    <div class="jumbotron text-center">
+        <h1 class="display-4">Random playground</h1>
+        </div>
+    <!--click - light switch-->   
+    <div class="container-lg text-center">
+    <p class="text-center">Screen too bright?</p>
+        <button id="lightbtn" class="btn btn-secondary">  
+            <svg xmlns="http://www.w3.org/2000/svg" width="26" height="26" fill="currentColor" 
+            class="bi bi-lightbulb" viewBox="0 0 16 16">
+            <path d="M2 6a6 6 0 1 1 10.174 4.31c-.203.196-.359.4-.453.619l-.762 1.769A.5.5 0 0 1 10.5 13a.5.5 0 0 1 0 1 .5.5 0 0 1 0 1l-.224.447a1 1 0 0 1-.894.553H6.618a1 1 0 0 1-.894-.553L5.5 15a.5.5 0 0 1 0-1 .5.5 0 0 1 0-1 .5.5 0 0 1-.46-.302l-.761-1.77a1.964 1.964 0 0 0-.453-.618A5.984 5.984 0 0 1 2 6zm6-5a5 5 0 0 0-3.479 8.592c.263.254.514.564.676.941L5.83 12h4.342l.632-1.467c.162-.377.413-.687.676-.941A5 5 0 0 0 8 1z"/>
+          </svg>Lights
+        </button>
+    </div>
+
+    <!--click/switch - calculator-->
+    <div class="container-lg calc text-center">
+            <h2>Calculator</h2>
+            <input type="number" id="input1">
+            <select id="operation">
+                <option>+</option>
+                <option>-</option>
+                <option>*</option>
+                <option>/</option>
+            </select>
+            <input type="number" id="input2">
+            <button id="calcBtn" class="btn btn-info">Calculate</button>
+            <div id="result"></div>
+    </div>
+
+    <!--mouseover-->
+    <div class="container-md text-center">
+        <h2>Dancing cat</h2>
+        <img src="images/cat1.jpg" width="300px" id="imgmouseover">
+    </div>
+
+    <!--doubleclick - time-->
+<div class="container-md text-center">
+    <button id="demo" class="btn btn-light">Double-click me to show todays date</button>
+
+    <!--mousedown-->
+    <button id="mousedbtn" class="btn btn-dark">Famous horror characters</button>
+        <div id="array"></div> <!--array popup-->
+</div>
+    <!--keydown-->
+    <div class="container-lg text-center">
+         <h2>Mario characters info:</h2>
+         <img src="images/mario.png" width="200px" alt="">
+         <img src="images/luigi.png" width="200px" alt="">
+         <img src="images/peach.png" width="200px" alt="">
+         <img src="images/toad.png" width="200px" alt="">
+         <img src="images/yoshi.png" height="110px" alt="">
+         <ul>
+             <p>Press 'M' for info about Mario.</p>
+             <p>Press 'L' for info about Luigi.</p>
+             <p>Press 'P' for info about Peach.</p>
+             <p>Press 'T' for info about Toad.</p>
+             <p>Press 'Y' for info about Yoshi.</p>
+        </ul>
+        <p class=keydown></p>
+    </div>
+
+    <!--JS link-->
+        <script src="main.js"></script>
+</body>
+</html>
